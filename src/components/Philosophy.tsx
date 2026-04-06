@@ -62,18 +62,17 @@ export default function Philosophy() {
 
         <FadeIn delay={0.08}>
           <h2 className="text-4xl lg:text-6xl font-bold tracking-tight leading-tight mb-6">
-            <span className="text-[var(--text-primary)]">I don&apos;t write</span>
+            <span className="text-[var(--text-primary)]">How I Build</span>
             <br />
-            <span className="text-[var(--text-muted)] font-light">code. I build</span>
-            <span className="gradient-text"> products.</span>
+            <span className="text-[var(--text-muted)] font-light">— and why it works.</span>
           </h2>
         </FadeIn>
 
         <FadeIn delay={0.14} className="mb-20">
           <p className="text-[var(--text-secondary)] text-lg max-w-2xl leading-relaxed font-light">
-            The best engineers understand that code is a means, not an end. I operate at the intersection
-            of engineering and product thinking — shipping systems that serve real people and drive
-            measurable results.
+            I focus on building systems that solve real business problems. Not just features — products
+            that scale, automate, and generate measurable results. I take ownership from idea to
+            deployment.
           </p>
         </FadeIn>
 
