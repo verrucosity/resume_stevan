@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Estevan Mejia  Personal Resume Site
 
-## Getting Started
+A premium personal resume/portfolio site for a senior Full Stack Engineer. Designed to feel like a high-end SaaS landing page, not a generic portfolio.
 
-First, run the development server:
+## Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Framework:** Next.js 16 (App Router)
+- **Styling:** Tailwind CSS v4 with a fully custom design system
+- **Animations:** Framer Motion  scroll-based, entrance, parallax
+- **Fonts:** Inter (Google Fonts)
+- **Deployment:** Vercel
+
+---
+
+## Design Principles
+
+- Dark mode by default (`#080A0F` base)
+- Japanese minimalism meets modern tech startup aesthetic
+- Accent color: warm gold (`#C8A97E`)
+- Glassmorphism panels, ambient glow blobs, subtle noise texture
+- Custom cursor (dot + ring with lag), loading screen with number counter
+
+---
+
+## Project Structure
+
+```
+src/
+app/
+  globals.css      # Full design system (CSS variables, utility classes)
+  layout.tsx       # Root layout + Inter font
+  page.tsx         # Page assembly
+components/
+  Nav.tsx           # Fixed nav with scroll-blur effect
+  Hero.tsx          # Parallax hero with metrics strip
+  CaseStudy.tsx     # Nature's Cradle timeline case study
+  Skills.tsx        # Tabbed skills with animated progress bars
+  Philosophy.tsx    # Principle cards + pull quote (Japanese glyphs)
+  Experience.tsx    # SyncWave, Freelance, TS Co
+  Contact.tsx       # Email + LinkedIn + footer
+  CustomCursor.tsx  # Lagged ring + dot cursor
+  Loader.tsx        # Loading screen with progress counter
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deploy to Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Option 1 - Vercel CLI (fastest)
 
-## Learn More
+```bash
+cd resume-site
+npm i -g vercel
+vercel
+```
 
-To learn more about Next.js, take a look at the following resources:
+Follow the prompts. It will auto-detect Next.js and configure everything.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Option 2 - GitHub + Vercel Dashboard
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Push this folder to a GitHub repository
+2. Go to vercel.com - New Project
+3. Import the repository
+4. Set Root Directory to `resume-site` if needed
+5. Click Deploy - no environment variables needed
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Local Development
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+cd resume-site
+npm install
+npm run dev
+```
+
+Open http://localhost:3000
+
+---
+
+## Customization
+
+All personal data is hardcoded in each component. To update:
+
+| What | Where |
+|------|-------|
+| Name, title, summary | Hero.tsx |
+| Metrics ($40k, 40%) | Hero.tsx, CaseStudy.tsx |
+| Case study details | CaseStudy.tsx |
+| Skills and levels | Skills.tsx - skillGroups array |
+| Philosophy principles | Philosophy.tsx - principles array |
+| Past jobs | Experience.tsx - experiences array |
+| Email and LinkedIn | Contact.tsx |
