@@ -13,9 +13,24 @@ type Experience = {
   highlights: string[];
   tags: string[];
   clients?: Client[];
+  keyResult?: string;
 };
 
 const experiences: Experience[] = [
+  {
+    period: "2020 — Present",
+    role: "Lead Engineer & Product Owner",
+    company: "Nature's Cradle",
+    url: "https://naturescradle.com",
+    type: "In-house",
+    highlights: [
+      "Architected and shipped a complete eCommerce platform from scratch — sole engineer, product manager, and operator",
+      "Built the \"Plant Wizard,\" a proprietary product discovery system that converts browsers into buyers",
+      "Automated 40% of manual operational overhead via custom Google Apps Script integrations",
+    ],
+    tags: ["WooCommerce", "React", "Node.js", "Google Apps Script", "MySQL"],
+    keyResult: "$40,000+ in digital revenue generated",
+  },
   {
     period: "2023 — Present",
     role: "Co-Founder & Lead Developer",
@@ -28,6 +43,7 @@ const experiences: Experience[] = [
       "Established robust CI/CD pipelines and deployment workflows",
     ],
     tags: ["React", "Node.js", "WooCommerce", "CI/CD"],
+    keyResult: "2 international client sites shipped",
     clients: [
       { name: "nakamandem.com", handle: "@yasukejunior", url: "https://nakamandem.com" },
       { name: "racademy.co.uk", handle: "@ricchaadotv", url: "https://racademy.co.uk" },
@@ -44,6 +60,7 @@ const experiences: Experience[] = [
       "Integrated Stripe and PayPal payment processing pipelines",
     ],
     tags: ["Node.js", "Express", "Stripe", "PayPal", "APIs"],
+    keyResult: "25% reduction in inventory stock issues",
   },
   {
     period: "2018",
@@ -55,6 +72,7 @@ const experiences: Experience[] = [
       "Deployed and maintained microservices on AWS infrastructure",
     ],
     tags: ["AWS", "Microservices", "Performance", "Backend"],
+    keyResult: "40% reduction in page load times",
   },
 ];
 
@@ -115,7 +133,11 @@ export default function Experience() {
                 whileHover={{ y: -2 }}
                 transition={{ duration: 0.3 }}
               >
-                <div className="p-8 lg:p-10">
+                <div className="p-8 lg:p-10 relative">
+                  {/* Faded ordinal */}
+                  <span className="absolute top-4 right-6 text-[5.5rem] font-black leading-none text-white opacity-[0.04] select-none pointer-events-none tabular-nums">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
                   <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4 mb-6">
                     <div>
                       <div className="flex items-center gap-3 mb-2">
@@ -157,6 +179,15 @@ export default function Experience() {
                       </li>
                     ))}
                   </ul>
+
+                  {exp.keyResult && (
+                    <div className="inline-flex items-center gap-2 mb-6 px-3 py-1.5 rounded-xl border" style={{ background: "rgba(200,169,126,0.06)", borderColor: "rgba(200,169,126,0.2)" }}>
+                      <svg className="w-3 h-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} style={{ color: "var(--accent)" }}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+                      </svg>
+                      <span className="text-xs font-semibold" style={{ color: "var(--accent)" }}>{exp.keyResult}</span>
+                    </div>
+                  )}
 
                   {exp.clients && (
                     <div className="mb-6">

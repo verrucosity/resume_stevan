@@ -120,12 +120,10 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
           className="text-[var(--text-secondary)] text-lg lg:text-xl max-w-2xl leading-relaxed mb-12 font-light"
         >
-          Full Stack Engineer with{" "}
-          <span className="text-[var(--text-primary)] font-medium">8+ years</span> of experience
-          in eCommerce, automation, and product systems. I specialize in building scalable tools
-          that drive{" "}
-          <span className="text-[var(--accent)]">real business outcomes</span> — from architecture
-          to deployment.
+          Full Stack Engineer focused on{" "}
+          <span className="text-[var(--text-primary)] font-medium">eCommerce, automation,</span>{" "}
+          and scalable product systems that drive{" "}
+          <span className="text-[var(--accent)]">real business outcomes</span>.
         </motion.p>
 
         {/* CTAs */}

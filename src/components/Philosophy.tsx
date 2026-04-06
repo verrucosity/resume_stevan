@@ -70,9 +70,9 @@ export default function Philosophy() {
 
         <FadeIn delay={0.14} className="mb-20">
           <p className="text-[var(--text-secondary)] text-lg max-w-2xl leading-relaxed font-light">
-            I focus on building systems that solve real business problems. Not just features — products
-            that scale, automate, and generate measurable results. I take ownership from idea to
-            deployment.
+            I don&apos;t just build features. I build systems that solve real business problems, automate
+            workflows, and scale with growth. From idea to deployment, I take full ownership of the
+            product.
           </p>
         </FadeIn>
 
