@@ -154,12 +154,12 @@ export default function Skills() {
 
         <FadeIn delay={0.14} className="mb-16">
           <p className="text-[var(--text-secondary)] text-lg max-w-xl leading-relaxed font-light">
-            Full-spectrum engineering — comfortable across the entire stack, with depth in backend
+            Full-spectrum engineering, comfortable across the entire stack, with depth in backend
             systems and eCommerce automation.
           </p>
         </FadeIn>
 
-        {/* 3-column skill groups — all visible at once */}
+        {/* 3-column skill groups - all visible at once */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           {skillGroups.map((group, gi) => (
             <FadeIn key={group.id} delay={0.08 + gi * 0.1}>

@@ -7,7 +7,7 @@ const principles = [
   {
     glyph: "所有",
     en: "Total Ownership",
-    body: "I don't hand things off — I ship them. From database schema to deploy script, I treat every product as if my name is on it. Because it is.",
+    body: "I don't hand things off. I ship them. From database schema to deploy script, I treat every product as if my name is on it. Because it is.",
   },
   {
     glyph: "自動",
@@ -17,7 +17,7 @@ const principles = [
   {
     glyph: "成長",
     en: "Build to Scale",
-    body: "Writing code that works today is the baseline. I architect for the version of the product six months from now — with room to grow.",
+    body: "Writing code that works today is the baseline. I architect for the version of the product six months from now, with room to grow.",
   },
   {
     glyph: "影響",
@@ -64,7 +64,7 @@ export default function Philosophy() {
           <h2 className="text-4xl lg:text-6xl font-bold tracking-tight leading-tight mb-6">
             <span className="text-[var(--text-primary)]">How I Build</span>
             <br />
-            <span className="text-[var(--text-muted)] font-light">— and why it works.</span>
+            <span className="text-[var(--text-muted)] font-light">and why it works.</span>
           </h2>
         </FadeIn>
 
@@ -112,7 +112,7 @@ export default function Philosophy() {
         <FadeIn delay={0.1} className="mt-16">
           <div className="relative border-l-2 border-[var(--accent)] pl-8 py-2">
             <blockquote className="text-2xl lg:text-3xl font-light text-[var(--text-primary)] leading-snug mb-4">
-              &ldquo;Automation isn&apos;t about replacing people — it&apos;s about freeing them to do
+              &ldquo;Automation isn&apos;t about replacing people, it&apos;s about freeing them to do
               the work that actually matters.&rdquo;
             </blockquote>
             <cite className="text-[var(--text-muted)] text-sm not-italic uppercase tracking-widest">

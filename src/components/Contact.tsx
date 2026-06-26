@@ -47,7 +47,7 @@ export default function Contact() {
 
         <FadeIn delay={0.14} className="mb-16">
           <p className="text-[var(--text-secondary)] text-lg max-w-lg leading-relaxed font-light">
-            Open to senior Full Stack roles — especially at product-minded teams working on meaningful
+            Open to senior Full Stack roles, especially at product-minded teams working on meaningful
             systems. Currently exploring opportunities in Japan.
           </p>
         </FadeIn>

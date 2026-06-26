@@ -18,13 +18,13 @@ type Experience = {
 
 const experiences: Experience[] = [
   {
-    period: "2020 — Present",
+    period: "2020 - Present",
     role: "Lead Engineer & Product Owner",
     company: "Nature's Cradle",
     url: "https://naturescradle.com",
     type: "In-house",
     highlights: [
-      "Architected and shipped a complete eCommerce platform from scratch — sole engineer, product manager, and operator",
+      "Architected and shipped a complete eCommerce platform from scratch as sole engineer, product manager, and operator",
       "Built the \"Plant Wizard,\" a proprietary product discovery system that converts browsers into buyers",
       "Automated 40% of manual operational overhead via custom Google Apps Script integrations",
     ],
@@ -32,7 +32,7 @@ const experiences: Experience[] = [
     keyResult: "$40,000+ in digital revenue generated",
   },
   {
-    period: "2023 — Present",
+    period: "2023 - Present",
     role: "Co-Founder & Lead Developer",
     company: "SyncWave Designs LLC",
     url: "https://syncwave-designs.vercel.app",
@@ -50,7 +50,7 @@ const experiences: Experience[] = [
     ],
   },
   {
-    period: "2019 — 2020",
+    period: "2019 - 2020",
     role: "Freelance Full Stack Developer",
     company: "Independent",
     type: "Contract",
@@ -119,7 +119,7 @@ export default function Experience() {
 
         <FadeIn delay={0.14} className="mb-20">
           <p className="text-[var(--text-secondary)] text-lg max-w-xl leading-relaxed font-light">
-            From early-stage startups to independent ventures — a consistent record of building systems
+            From early-stage startups to independent ventures, a consistent record of building systems
             that stick.
           </p>
         </FadeIn>

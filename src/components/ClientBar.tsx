@@ -51,7 +51,7 @@ export default function ClientBar() {
             Live client work
           </motion.p>
 
-          {/* Vertical divider — desktop only */}
+          {/* Vertical divider - desktop only */}
           <div className="hidden sm:block w-px h-8 bg-[var(--border)]" />
 
           {/* Client chips */}

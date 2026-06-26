@@ -29,7 +29,7 @@ const psi = [
     color: "rgba(200,169,126,0.06)",
     borderColor: "rgba(200,169,126,0.2)",
     accentColor: "#C8A97E",
-    content: "Built a full eCommerce platform from scratch. Created the \"Plant Wizard\" — a proprietary product discovery system that converts browsers into buyers. Automated inventory tracking, low-stock alerts, and order updates via Google Apps Script.",
+    content: "Built a full eCommerce platform from scratch. Created the \"Plant Wizard\" - a proprietary product discovery system that converts browsers into buyers. Automated inventory tracking, low-stock alerts, and order updates via Google Apps Script.",
     points: ["Full eCommerce platform", "Plant Wizard discovery system", "Automated order & inventory workflows"],
   },
   {
@@ -43,7 +43,7 @@ const psi = [
     color: "rgba(52,211,153,0.06)",
     borderColor: "rgba(52,211,153,0.15)",
     accentColor: "#34D399",
-    content: "Took the business from $0 digital revenue to $40,000+ while simultaneously acting as engineer, product manager, and operator. Ongoing — still shipping improvements.",
+    content: "Took the business from $0 digital revenue to $40,000+ while simultaneously acting as engineer, product manager, and operator. Ongoing - still shipping improvements.",
     points: ["$40,000+ revenue generated", "40% reduction in operational workload", "Full product lifecycle ownership"],
   },
 ];
@@ -106,7 +106,7 @@ export default function CaseStudy() {
               </svg>
             </a>
             <span className="text-[var(--text-muted)] opacity-40">·</span>
-            <span className="text-[var(--text-muted)] text-xs uppercase tracking-widest">2020 — Present</span>
+            <span className="text-[var(--text-muted)] text-xs uppercase tracking-widest">2020 - Present</span>
           </div>
         </FadeIn>
 
